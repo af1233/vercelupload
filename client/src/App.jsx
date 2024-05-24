@@ -1,9 +1,10 @@
 import "./App.css";
-import CustomForm from "./components/FormData";
+import AllUsers from "./components/AllUsers";
+ 
 function App() {
   return (
     <>
-      <CustomForm />
+     <AllUsers/>
     </>
   );
 }

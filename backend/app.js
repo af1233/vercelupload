@@ -4,9 +4,11 @@ const router = require('./routes/userRouter');
 const ConnectToDB = require('./db');
 const cookieParser = require("cookie-parser");
 const dotenv=require("dotenv");
+const cors=require("cors")
+
 dotenv.config();
 const app = express();
-
+app.use(cors())
 app.use(bodyParser.json());
 app.use(cookieParser())
 ConnectToDB();
